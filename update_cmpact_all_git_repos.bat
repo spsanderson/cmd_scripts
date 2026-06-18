@@ -47,6 +47,10 @@ for /d %%D in ("%ROOT%\*") do (
             git gc
 
             echo.
+            echo Running: git repack -a -d
+            git repack -a -d
+
+            echo.
             echo Finished: %%~nxD
             popd
             echo.
